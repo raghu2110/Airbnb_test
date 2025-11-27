@@ -2,7 +2,7 @@ airbnb:
   outputs:
     dev:
       type: snowflake
-      account: JQQRKGH-UU10777
+      account: PSBRRAE-LB94283
       user: DBT
 
       role: TRANSFORM

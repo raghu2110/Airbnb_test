@@ -1,4 +1,4 @@
-name: 'AIRBNB_PROJECT'
+name: 'airbnb_project'
 version: '1.0.0'
 
 profile: 'airbnb'
@@ -23,5 +23,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   airbnb_project:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    src:
       +materialized: view
