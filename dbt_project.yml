@@ -23,5 +23,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   airbnb_project:
     # Config indicated by + and applies to all files under models/example/
-    src:
-      +materialized: view
+    +materialized: view # the + indicates apply this config to all child under airbnb_project (parent)
+    dim:
+      +materialized: table
