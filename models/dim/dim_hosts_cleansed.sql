@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='view',
+        tags=['dim','cleansed']
+    )
+}}
 with src_hosts as
 (
     select

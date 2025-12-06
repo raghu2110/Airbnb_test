@@ -26,3 +26,8 @@ models:
     +materialized: view # the + indicates apply this config to all child under airbnb_project (parent)
     dim:
       +materialized: table
+    src:
+      +materialized: ephemeral
+
+data_tests:
+  store_failures: true
